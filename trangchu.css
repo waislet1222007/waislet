@@ -1,0 +1,156 @@
+body {
+    background-image: url("Road.jpg"); /* Đường dẫn ảnh */
+    background-size: cover; /* Ảnh phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu 100% viewport */
+    margin: 0;
+}
+
+.main-content {
+    flex: 1; /* Phần nội dung chính sẽ co giãn để đẩy footer xuống */
+}
+
+
+header {
+    background: #222;
+    color: rgba(211, 211, 211, 0.7);
+    text-align: center;
+    font-size: 24px;
+    font-family: Source Sans Pro;
+    text-shadow: 5px 5px 5px black  ;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    background: #444;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột mỗi hàng */
+    gap: 20px; /* Khoảng cách giữa các khung */
+    justify-content: center;
+    padding: 20px;
+}
+
+.car {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Định chiều rộng cố định */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car img {
+    width: 100%;  /* Ảnh sẽ tự động co giãn theo khung */
+    height: 200px; /* Chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để vừa với khung, không bị méo */
+    border-radius: 5px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {color:gray;  }
+
+.car a{
+    text-decoration: none;
+    color: black;
+}
+
+.car a:hover{
+    color: gray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Thiết lập từng card */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nội dung hiển thị trên ảnh */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Hiệu ứng mờ trên ảnh */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+.content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
