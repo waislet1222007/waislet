@@ -1,2 +1,0 @@
-# waislet
-quailetdepchai
